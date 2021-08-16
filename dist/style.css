@@ -1,0 +1,191 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Deca', sans-serif;
+  color: white;
+  line-height: 1.3;
+  background-color: #090b1a;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-fd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ads {
+  padding: 5.5rem 1.5rem;
+}
+
+@media (min-width: 48em) {
+  .ads {
+    padding: 5.5rem 4.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .ads {
+    padding: 5.5rem 12.5rem;
+  }
+}
+
+@media (min-width: 71.25em) {
+  .ads {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.image {
+  background-color: #aa5cdb;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+@media (min-width: 71.25em) {
+  .image {
+    border-radius: 0 0.8rem 0.8rem 0;
+  }
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -0.3rem;
+  border-radius: 0.8rem 0.8rem 0 0;
+  mix-blend-mode: multiply;
+}
+
+@media (min-width: 71.25em) {
+  .image img {
+    border-radius: 0 0.8rem 0.8rem 0;
+  }
+}
+
+.get {
+  background-color: #1b1938;
+  padding: 1.5rem;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+@media (min-width: 71.25em) {
+  .get {
+    padding: 4rem 5rem;
+    border-radius: 0.8rem 0 0 0.8rem;
+  }
+}
+
+.get h2, .get p, .get ul {
+  margin-top: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+@media (min-width: 71.25em) {
+  .get h2, .get p, .get ul {
+    text-align: left;
+  }
+}
+
+.get h2 {
+  font-size: 1.6875rem;
+}
+
+@media (min-width: 71.25em) {
+  .get h2 {
+    font-size: 2.3rem;
+    max-width: 27rem;
+  }
+}
+
+.get h2 span {
+  color: #aa5cdb;
+}
+
+.get p {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 71.25em) {
+  .get p {
+    max-width: 21rem;
+    line-height: 1.9;
+    margin-bottom: 4.5rem;
+  }
+}
+
+.get ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  font-size: 1.6875rem;
+  font-weight: bold;
+}
+
+@media (min-width: 71.25em) {
+  .get ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 21rem;
+  }
+}
+
+.get li span {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.6);
+  padding-top: 0.4rem;
+  padding-bottom: 1.4rem;
+}
+
+@media (min-width: 71.25em) {
+  .get li span {
+    padding-bottom: 0;
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
