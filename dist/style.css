@@ -18,6 +18,12 @@ body {
   background-color: #090b1a;
 }
 
+@media (min-width: 69em) {
+  body {
+    height: 100vh;
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,155 +43,142 @@ body {
           justify-content: center;
 }
 
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .flex-ai-c {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.ads {
-  padding: 5.5rem 1.5rem;
+.card {
+  background-color: #1b1938;
+  max-width: 23.4375em;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 4rem 1.5rem;
 }
 
-@media (min-width: 48em) {
-  .ads {
-    padding: 5.5rem 4.5rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .ads {
-    padding: 5.5rem 12.5rem;
-  }
-}
-
-@media (min-width: 71.25em) {
-  .ads {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media (min-width: 69em) {
+  .card {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    max-width: 69.3125rem;
+    margin: 0 1.5rem;
   }
 }
 
-.image {
+.img-sec {
   background-color: #aa5cdb;
-  border-radius: 0.8rem 0.8rem 0 0;
 }
 
-@media (min-width: 71.25em) {
-  .image {
-    border-radius: 0 0.8rem 0.8rem 0;
-  }
-}
-
-.image img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: -0.3rem;
-  border-radius: 0.8rem 0.8rem 0 0;
+.img-sec img {
+  content: url(../images/image-header-mobile.jpg);
+  display: block;
+  max-width: 100%;
+  height: auto;
   mix-blend-mode: multiply;
+  opacity: 0.8;
 }
 
-@media (min-width: 71.25em) {
-  .image img {
-    border-radius: 0 0.8rem 0.8rem 0;
+@media (min-width: 69em) {
+  .img-sec img {
+    content: url(../images/image-header-desktop.jpg);
+    max-width: 33.75rem;
+    height: 27.8125rem;
   }
 }
 
-.get {
-  background-color: #1b1938;
-  padding: 1.5rem;
-  border-radius: 0 0 0.8rem 0.8rem;
+article {
+  text-align: center;
+  margin: 2.5rem 2.8rem 0;
 }
 
-@media (min-width: 71.25em) {
-  .get {
-    padding: 4rem 5rem;
-    border-radius: 0.8rem 0 0 0.8rem;
+@media (min-width: 69em) {
+  article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 4rem 7rem 4rem 4rem;
   }
 }
 
-.get h2, .get p, .get ul {
+.wrap h1, .wrap p {
   margin-top: 0;
-  padding-left: 0;
   text-align: center;
 }
 
-@media (min-width: 71.25em) {
-  .get h2, .get p, .get ul {
+@media (min-width: 69em) {
+  .wrap h1, .wrap p {
     text-align: left;
   }
 }
 
-.get h2 {
-  font-size: 1.6875rem;
+.wrap h1 {
+  font-size: 1.8rem;
 }
 
-@media (min-width: 71.25em) {
-  .get h2 {
-    font-size: 2.3rem;
-    max-width: 27rem;
+@media (min-width: 69em) {
+  .wrap h1 {
+    font-size: 2rem;
   }
 }
 
-.get h2 span {
+.wrap h1 span {
   color: #aa5cdb;
 }
 
-.get p {
-  font-size: 0.875rem;
+.wrap p {
+  margin-bottom: 3.125rem;
+  line-height: 1.6;
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 2rem;
 }
 
-@media (min-width: 71.25em) {
-  .get p {
-    max-width: 21rem;
-    line-height: 1.9;
-    margin-bottom: 4.5rem;
-  }
-}
-
-.get ul {
-  list-style-type: none;
-  margin-bottom: 0;
-  font-size: 1.6875rem;
-  font-weight: bold;
-}
-
-@media (min-width: 71.25em) {
-  .get ul {
+@media (min-width: 69em) {
+  .stats {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 21rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 3rem;
   }
 }
 
-.get li span {
-  display: block;
-  font-family: "Inter", sans-serif;
-  font-size: 0.6875rem;
-  font-weight: normal;
-  color: rgba(255, 255, 255, 0.6);
-  padding-top: 0.4rem;
-  padding-bottom: 1.4rem;
+.stats h2, .stats p {
+  margin: 0;
 }
 
-@media (min-width: 71.25em) {
-  .get li span {
-    padding-bottom: 0;
-    font-size: 0.8rem;
+.stats h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.stats p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  margin-bottom: 2.1875rem;
+}
+
+@media (min-width: 69em) {
+  .stats p {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
